@@ -361,7 +361,11 @@
         "add_tip": "Добавете съвет",
         "update_tip": "Съвет за актуализиране",
         "message": "Благодарим ви, ние го оценяваме.",
-        "no_tip_label": "Нито един"
+        "no_tip_label": "Нито един",
+        "title": "Добавете съвет",
+        "description": "Покажете подкрепата си за екипа на %{shop_name}",
+        "presets_description": "Изберете процент на бакшиш",
+        "custom_label": "Персонализиран съвет"
       },
       "open_graph_meta_tag": {
         "title_with_products": {
@@ -1450,7 +1454,31 @@
         "gift_card_resend_failure": {
           "one": "Възникна проблем при повторното изпращане на вашата карта за подарък. Опитайте отново или се свържете с нас.",
           "other": "Възникна проблем при повторното изпращане на вашите карти за подарък. Опитайте отново или се свържете с нас."
-        }
+        },
+        "thank_you_payments_app_pending_payment_description_default_with_missing": "Свържете се с нас по имейл или телефон, за да получите потвърждение на поръчката.",
+        "thank_you_payments_app_pending_payment_description_default_with_missing_payment": "Свържете се с нас по имейл или телефон, за да получите потвърждение на поръчката.",
+        "thank_you_payments_app_pending_payment_description_default_with_missing_pick_up": "Свържете се с нас по имейл или телефон, за да получите потвърждение на поръчката.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_and_phone": "Скоро ще получите имейл за потвърждение с номера на вашата поръчка.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_and_phone_payment": "Скоро ще получите имейл за потвърждение с номера на вашата поръчка.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_and_phone_pick_up": "Скоро ще получите имейл за потвърждение с номера на вашата поръчка.",
+        "thank_you_payments_app_pending_payment_description_default_with_email": "Скоро ще получите имейл за потвърждение с номера на вашата поръчка.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_payment": "Скоро ще получите имейл за потвърждение с номера на вашата поръчка.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_pick_up": "Скоро ще получите имейл за потвърждение с номера на вашата поръчка.",
+        "thank_you_payments_app_pending_payment_description_default_with_phone": "Скоро ще получите текст за потвърждение с номера на вашата поръчка.",
+        "thank_you_payments_app_pending_payment_description_default_with_phone_payment": "Скоро ще получите текст за потвърждение с номера на вашата поръчка.",
+        "thank_you_payments_app_pending_payment_description_default_with_phone_pick_up": "Скоро ще получите текст за потвърждение с номера на вашата поръчка.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_missing": "Свържете се с нас по имейл или телефон, за да получите потвърждение на поръчката.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_missing_payment": "Свържете се с нас по имейл или телефон, за да получите потвърждение на поръчката.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_missing_pick_up": "Свържете се с нас по имейл или телефон, за да получите потвърждение на поръчката.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_and_phone": "След като завършите плащането си, ще получите имейл за потвърждение с номера на вашата поръчка.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_and_phone_payment": "След като завършите плащането си, ще получите имейл за потвърждение с номера на вашата поръчка.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_and_phone_pick_up": "След като завършите плащането си, ще получите имейл за потвърждение с номера на вашата поръчка.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email": "След като завършите плащането си, ще получите имейл за потвърждение с номера на вашата поръчка.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_payment": "След като завършите плащането си, ще получите имейл за потвърждение с номера на вашата поръчка.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_pick_up": "След като завършите плащането си, ще получите имейл за потвърждение с номера на вашата поръчка.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_phone": "След като завършите плащането си, ще получите текст за потвърждение с номера на вашата поръчка.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_phone_payment": "След като завършите плащането си, ще получите текст за потвърждение с номера на вашата поръчка.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_phone_pick_up": "След като завършите плащането си, ще получите текст за потвърждение с номера на вашата поръчка."
       },
       "payment_errors": {
         "checkout_amount_changed": "Вашето плащане не можа да бъде обработено, тъй като дължимата сума при плащане се е променила. Моля, проверете поръчката си и опитайте отново.",
@@ -1954,7 +1982,10 @@
           "returned": "%{count} върнати"
         },
         "additional_payment_requested": "Необходимо е плащане от %{total_outstanding}",
-        "checkout_review_and_pay": "Вашата поръчка %{order_name} бе актуализирана. Прегледайте тези промени, след което платете, за да потвърдите поръчката си."
+        "checkout_review_and_pay": "Вашата поръчка %{order_name} бе актуализирана. Прегледайте тези промени, след което платете, за да потвърдите поръчката си.",
+        "order_updated_on": "Вашата поръчка беше актуализирана на %{last_edited_at}.",
+        "order_review_and_pay": "Вашата поръчка беше актуализирана. Прегледайте и платете, за да потвърдите поръчката си.",
+        "pay_now": "Плати сега"
       },
       "billing": {
         "billing_address_title": "Сметка на",
@@ -1982,6 +2013,27 @@
         "manual_payment_gateway_label": "Наръчник",
         "billing_address_title": "Адрес на плащане",
         "free_label": "Безплатно"
+      },
+      "change_currency": {
+        "credit_card_will_be_charged_html": "Вашата кредитна карта ще бъде таксувана %{amount}",
+        "payment_total_label": "Общо плащане",
+        "change_currency_link": "Промяна на %{currency_name}",
+        "card_provider_fx_charges_warning": "Доставчикът на вашата карта може да начислява такси за %{currency_code} транзакции.",
+        "currency_not_supported_by_shop": "Избраната от вас валута вече не е налична. Всички цени вече са в %{currency_code}."
+      },
+      "change_country": {
+        "cart_updated_based_on_country": "Вашата количка е актуализирана въз основа на вашата държава за доставка.",
+        "cart_and_currency_updated_based_on_country": "Вашата количка и валута са актуализирани въз основа на вашата държава за доставка."
+      },
+      "change_cart_localization": {
+        "verify_shipping_address": "Вашата държава\/регион е актуализиран. Въведете своя адрес за доставка, за да продължите с плащането."
+      },
+      "one": {
+        "errors": {
+          "merchandise": {
+            "gift_card_price_must_be_greater_than_zero": "Цената на подаръчната карта трябва да е по-голяма от 0."
+          }
+        }
       }
     },
     "notices": {
@@ -2052,7 +2104,8 @@
         "view_lines_limit_reached": "Редовете трябва да са по-малко от %{limit}",
         "merchandise_line_transformers": {
           "run_error": "Възникна грешка във вашата количка."
-        }
+        },
+        "gift_card_price_must_be_greater_than_zero": "Продуктът от пакета „%{name}“ не може да бъде добавен към количката."
       },
       "storefront": {
         "invalid_password": "Паролата е неправилна, моля опитайте отново."
@@ -2589,9 +2642,76 @@
         "order_status_message": {
           "list_view": {
             "view_order_for_details": "Вижте поръчката за подробности",
-            "estimated_delivery": "Очаквана {{date}}"
+            "estimated_delivery": "Очаквана {{date}}",
+            "last_updated": "Последна актуализация {{date}}"
+          },
+          "table_view": {
+            "estimated_delivery": "Прогн. {{date}}"
           }
-        }
+        },
+        "payment_status": {
+          "list_view": {
+            "overdue": "Просрочено плащане",
+            "due": "Падеж на плащане {{date}}",
+            "due_today": "Плащането се дължи днес",
+            "due_without_date": "Да се ​​плати до",
+            "due_on_fulfillment": "Плащане при изпълнение",
+            "pay_to_confirm": "Платете за потвърждение",
+            "payment_not_due": "Плащането все още не е дължимо"
+          },
+          "table_view": {
+            "overdue": "Просрочени",
+            "due": "Краен срок {{date}}",
+            "due_today": "Срок днес",
+            "paid": "Платено",
+            "due_without_date": "В следствие",
+            "due_on_fulfillment": "Подлежи на изпълнение",
+            "pay_to_confirm": "Платете за потвърждение",
+            "payment_not_due": "Все още не е падеж"
+          }
+        },
+        "sort_by": "Сортиране по: {{option}}",
+        "sort_hide_options_accessibility_label": "Скриване на опциите за сортиране за потвърдени поръчки.",
+        "sort_show_options_accessibility_label": "Показване на опции за сортиране за потвърдени поръчки.",
+        "sort_currently_sorted_by_accessibility_label": "В момента сортирани по: {{option}}",
+        "sort_title": "Вид",
+        "sort": {
+          "date": {
+            "newest": "Най-новите към най-старите",
+            "oldest": "Най-старите към най-новите"
+          },
+          "location": {
+            "ascending": "Местоположение (AZ)",
+            "descending": "Местоположение (ZA)"
+          },
+          "order_number": {
+            "ascending": "Номер на поръчката (нисък към висок)",
+            "descending": "Номер на поръчката (висок към нисък)"
+          },
+          "order_total": {
+            "ascending": "Обща сума на поръчката (от ниска към висока)",
+            "descending": "Обща сума на поръчката (високо към ниско)"
+          }
+        },
+        "filter_title": "Филтър",
+        "filter": {
+          "clear_section": "Изчистване на раздела",
+          "clear_all": "Изчисти всичко",
+          "apply": "Приложи",
+          "date": {
+            "start_date": "Начална дата",
+            "end_date": "Крайна дата",
+            "title": "Дата на поръчка",
+            "today": "Днес",
+            "last_7_days": "Последните 7 дни",
+            "last_30_days": "Последните 30 дни",
+            "last_90_days": "Последните 90 дни",
+            "last_365_days": "Последните 12 месеца",
+            "custom": "Персонализиран"
+          }
+        },
+        "table_view": "Показване на табличен изглед",
+        "show_order_actions_accessibility_label": "Показване на действия за поръчка за поръчка {{name}}"
       },
       "order_status": {
         "no_tracking_number": "Няма номер за проследяване на тази пратка.",
@@ -2641,7 +2761,54 @@
         "in_review_label": "В Преглед",
         "in_review_title": "Вашата поръчка се преглежда",
         "last_updated": "Последна актуализация {{date}}",
-        "multiple_shipments_label": "Множество пратки"
+        "multiple_shipments_label": "Множество пратки",
+        "attempted_delivery_label": "Опит за доставка",
+        "attempted_delivery_description": "Опитът за доставка беше неуспешен.",
+        "attempted_to_deliver_label": "Опит за доставка",
+        "confirmed_description": "Получихме вашата поръчка.",
+        "on_its_way_description": "Тази пратка е на път.",
+        "out_for_delivery_description": "Тази пратка е готова за доставка.",
+        "preparing_for_shipping_label": "Подготовка за изпращане",
+        "preparing_for_shipping_description": "Тези артикули се подготвят за изпращане.",
+        "ready_for_pickup_label": "Готов за прибиране",
+        "ready_for_pickup_description": "Тези артикули са готови за получаване. Моля, донесете потвърждение на поръчката си, когато я вземете.",
+        "ready_for_pickup_location": "Вашата поръчка е готова за получаване на място",
+        "picked_up_label": "Вдигнати",
+        "picked_up_description": "Тези артикули са взети.",
+        "canceled_description": "Вашата поръчка беше анулирана на {{date}} .",
+        "canceled_label": "Отменен",
+        "canceled_title": "Вашата поръчка е анулирана",
+        "come_back": "Върнете се на тази страница за актуализации относно състоянието на вашата пратка.",
+        "company_tracking_number": "Номер за проследяване на {{company}} :",
+        "confirmed_label": "Потвърдено",
+        "confirmed_title": "Вашата поръчка е потвърдена",
+        "confirmed_description_pickup": "Ще получите имейл, когато поръчката ви е готова за получаване.",
+        "confirmed_description_digital": "Ще получите имейл, когато поръчката ви е готова.",
+        "confirmed_description_gift_card_text": "Ще получите SMS, когато поръчката ви е готова.",
+        "delivered_description": "Тази пратка е доставена.",
+        "delivered_label": "Доставено",
+        "delivered_title": "Вашата пратка е доставена",
+        "delivered_description_digital": "Вашата поръчка е завършена.",
+        "delivered_description_gift_card": {
+          "one": "Подаръчната карта беше изпратена по имейл.",
+          "other": "Подаръчните карти бяха изпратени по имейл."
+        },
+        "delivered_description_gift_card_text": {
+          "one": "Подаръчната карта беше изпратена чрез SMS.",
+          "other": "Подаръчните карти бяха изпратени чрез SMS."
+        },
+        "gift_card_label": {
+          "one": "Карта за подарък",
+          "other": "Подаръчни карти"
+        },
+        "gift_card_resend": {
+          "one": "Изпратете отново имейла",
+          "other": "Повторно изпращане на имейли"
+        },
+        "gift_card_resend_text": {
+          "one": "Повторно изпращане на текст",
+          "other": "Повторно изпращане на текстови съобщения"
+        }
       },
       "status_mark_as_delivered": "Маркирайте като доставено",
       "status_title": "Статус на поръчката",
@@ -3137,7 +3304,10 @@
             "description_partially_paid": "Тази поръчка беше частично платена. Имате остатъчен баланс.",
             "description_authorized": "Вашият начин на плащане ще бъде таксуван на датата на падежа или можете да платите сега.",
             "description_due_on_receipt": "Ще получите фактура, когато плащането е дължимо.",
-            "description_due_on_fulfillment": "Плащането е дължимо, след като всички елементи в тази поръчка бъдат изпълнени."
+            "description_due_on_fulfillment": "Плащането е дължимо, след като всички елементи в тази поръчка бъдат изпълнени.",
+            "description_waiting_for_manual_payment": "Поръчката ще бъде маркирана като платена, когато плащането бъде получено.",
+            "description_due_on_receipt_partially_paid": "Тази поръчка беше частично платена. Имате остатъчен баланс. Ще получите фактура, когато плащането е дължимо.",
+            "description_due_on_fulfillment_partially_paid": "Тази поръчка беше частично платена. Имате остатъчен баланс. Плащането е дължимо, след като всички елементи в тази поръчка бъдат изпълнени."
           },
           "draft": {
             "description": "Детайлите за плащане се решават при потвърждаване на поръчката.",
