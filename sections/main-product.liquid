@@ -532,6 +532,16 @@
               {% render 'icon-with-text',
                 block: block
               %}
+            {% when 'quality_assurance' %}
+              <div class="quality-assurance">
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-hand-holding-dollar"></i>
+
+                    <span>30 Дена срок на връщане</span>
+                  </li>
+                </ul>
+              </div><!-- /.quality-assurance -->
           {%- endcase -%}
         {%- endfor -%}
         <a href="{{ product.url }}" class="link product__view-details animate-arrow">
@@ -822,7 +832,7 @@
     {
       "type": "buy_buttons",
       "name": "t:sections.main-product.blocks.buy_buttons.name",
-      "limit": 1,
+      "limit": 2,
       "settings": [
         {
           "type": "checkbox",
@@ -837,6 +847,19 @@
           "default": true,
           "label": "t:sections.main-product.blocks.buy_buttons.settings.show_gift_card_recipient.label",
           "info": "t:sections.main-product.blocks.buy_buttons.settings.show_gift_card_recipient.info"
+        }
+      ]
+    },
+    {
+      "type": "quality_assurance",
+      "name": "Quality Assurance",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "quality_assurance",
+          "label": "Quality Assurance",
+          "default": false
         }
       ]
     },

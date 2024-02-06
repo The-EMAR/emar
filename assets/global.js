@@ -936,7 +936,7 @@ class SlideshowComponent extends SliderComponent {
     const slideScrollPosition =
       this.slider.scrollLeft +
       this.sliderFirstItemNode.clientWidth *
-        (this.sliderControlLinksArray.indexOf(event.currentTarget) + 1 - this.currentPage);
+      (this.sliderControlLinksArray.indexOf(event.currentTarget) + 1 - this.currentPage);
     this.slider.scrollTo({
       left: slideScrollPosition,
     });
@@ -1068,13 +1068,14 @@ class VariantSelects extends HTMLElement {
     if (productForm) productForm.handleErrorMessage();
   }
 
+
+
   renderProductInfo() {
     const requestedVariantId = this.currentVariant.id;
     const sectionId = this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section;
 
     fetch(
-      `${this.dataset.url}?variant=${requestedVariantId}&section_id=${
-        this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section
+      `${this.dataset.url}?variant=${requestedVariantId}&section_id=${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section
       }`
     )
       .then((response) => response.text())
@@ -1114,6 +1115,7 @@ class VariantSelects extends HTMLElement {
         if (qtyRules) qtyRules.classList.remove('hidden');
 
         if (source && destination) destination.innerHTML = source.innerHTML;
+
         if (inventorySource && inventoryDestination) inventoryDestination.innerHTML = inventorySource.innerHTML;
         if (skuSource && skuDestination) {
           skuDestination.innerHTML = skuSource.innerHTML;
@@ -1151,6 +1153,12 @@ class VariantSelects extends HTMLElement {
       });
   }
 
+  convertNumber(number) {
+    let convertedNumber = number;
+    convertedNumber = convertedNumber.toFixed(2); // Round to two decimal places
+    return convertedNumber;
+  }
+
   toggleAddButton(disable = true, text, modifyClass = true) {
     const productForm = document.getElementById(`product-form-${this.dataset.section}`);
     if (!productForm) return;
@@ -1163,7 +1171,19 @@ class VariantSelects extends HTMLElement {
       if (text) addButtonText.textContent = text;
     } else {
       addButton.removeAttribute('disabled');
-      addButtonText.textContent = window.variantStrings.addToCart;
+      // addButtonText.textContent = window.variantStrings.addToCart;
+      let currentPrice = (this.currentVariant.price / 100).toFixed(2);
+      let compareAtPrice = (this.currentVariant.compare_at_price / 100).toFixed(2);
+
+      // Product variant price
+      // addButtonText.textContent = `${(this.currentVariant.price / 100).toFixed(2)}`;
+      addButtonText.innerHTML = `
+      <div class="custom-price">
+        <span class="custom-price__compare-value">${compareAtPrice} лв</span>
+        <span class="custom-price__value">${currentPrice} лв</span>
+        <i class="fa-solid fa-lock"></i>
+      </div><!-- /.custom-price -->
+      `;
     }
 
     if (!modifyClass) return;
